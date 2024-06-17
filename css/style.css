@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Roboto;
+}
+body{
+    height: 100vh;
+    background-image: url('../images/nature1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 30%;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.search{
+    width: 90%;
+    text-align: center;
+}
+.search input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin: 30px 0 20px 0;
+}
+.search input::placeholder{
+    color: #fff;;
+}
+.search .btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.search .btn:hover{
+    opacity: 1;
+}
+.city,
+.degree,
+.statue,
+.humidity{
+    width: 80%;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.statue{
+    display: flex;
+    align-items: center;
+}
+.statue h3{
+    margin-left: 10px;
+}
+#cloud{
+    display: none;
+}
+.city.loading::after{
+    content: "Loading...";
+    font-size: 1.2rem;
+}
